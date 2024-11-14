@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/background-image3.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+header {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header > img {
+    border-radius: 15%;
+}
+
+.navbar {
+    background-color: rgba(63, 61, 61, 0.637);
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.logo {
+    color: white;
+    position: absolute;
+    left: 325px;
+}
+
+.logo img {
+    height: 150px;
+}
+
+.main-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.main-nav li {
+    margin: 0;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: rgb(255, 79, 255); /* Magenta */
+    font-weight: bold;
+}
+
+.lista:hover {
+    background-color: rgba(255, 255, 255, 0.616);
+    font-size: 20px;
+    color: rgb(255, 79, 255);
+    border-radius: 7px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-top: 80px;
+    width: 100%;
+}
+
+#content-container {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    padding: 20px;
+    background-color: rgba(50, 50, 50, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    color: white;
+}
+
+#horario {
+    width: 45%;
+}
+
+#horario img {
+    width: 100%;
+}
+
+#historia {
+    width: 45%;
+}
+
+#historia img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(50, 50, 50, 0.9);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer span, footer a {
+    color: white !important; 
+    text-decoration: none; 
+}
+
+.izqspan {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.censpan {
+    flex: 1;
+    text-align: center;
+}
+
+.derspan {
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#tabla-precio {
+    margin: 20px auto;
+    text-align: center;
+}
+
+table {
+    width: 85%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+td {
+    border: 2px solid rgb(255, 79, 255);
+    padding: 10px;
+    color: rgb(255, 79, 255);
+}
+
+tr:nth-child(even) {
+    background-color: #e6e6fa; 
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; 
+}
+
+tr:first-child td {
+    background-color: rgb(255, 79, 255);
+    color: white; 
+    font-weight: bold;
+}

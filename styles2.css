@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Color del texto por defecto */
+}
+
+h1, h2 {
+    color: rgb(255, 79, 255); /* Color morado para los títulos */
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px; /* Espacio superior para el título principal */
+}
+
+h2 {
+    margin-top: 40px; /* Espacio superior para el subtítulo */
+}
+
+table {
+    width: 100%;
+    margin: 20px 0; /* Margen superior e inferior para la tabla */
+    text-align: center; /* Centra el contenido de la tabla */
+}
+
+td {
+    padding: 10px; /* Espaciado interno para las celdas */
+}
+
+a {
+    color: #a406e3; /* Color morado para los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+#contacto {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 20px auto; /* Centra el formulario en la página */
+}
+
+label {
+    display: block; /* Hace que las etiquetas ocupen toda la línea */
+    margin: 10px 0 5px; /* Margen para las etiquetas */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Ancho completo para los campos de entrada */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+button {
+    background-color: rgb(255, 79, 255); /* Color de fondo morado para el botón */
+    color: white; /* Color del texto en el botón */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+button:hover {
+    background-color: rgb(255, 79, 255); /* Color más oscuro al pasar el ratón */
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-top: 80px;
+    width: 100%;
+}
